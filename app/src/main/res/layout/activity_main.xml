@@ -56,60 +56,58 @@
                     android:background="@drawable/bac_1"
                     app:layout_constraintStart_toEndOf="@+id/idBtnOnBT"
                     android:layout_height="wrap_content"/>
+
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/idBtnDispBT"
                     android:layout_width="0dp"
-                    android:padding="10dp"
-                    android:drawableStart="@drawable/ic_search"
-                    android:textColor="@color/white"
-                    android:drawablePadding="6dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
                     android:background="@drawable/bac_4"
-                    android:layout_marginTop="10dp"
-                    android:text="Dispositivos"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/idBtnOnBT"
-                    android:layout_height="wrap_content"/>
-                <LinearLayout
-
+                    android:drawableStart="@drawable/ic_search"
+                    android:drawablePadding="6dp"
+                    android:padding="10dp"
+                    android:text="Buscar Dispositivos Bluetooth"
+                    android:textColor="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/idBtnOffBT"
-                    app:layout_constraintStart_toEndOf="@id/idBtnDispBT"
-                    app:layout_constraintBottom_toTopOf="@id/idBtnConect"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/idBtnOnBT" />
+
+                <Spinner
+                    android:id="@+id/idSpinDisp"
                     android:layout_width="0dp"
-                    android:layout_marginStart="6dp"
-                    android:background="@color/white"
-                    android:layout_height="wrap_content">
-                    <Spinner
-                        android:id="@+id/idSpinDisp"
-                        android:textColor="#fff"
-                        android:layout_marginTop="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        />
-                </LinearLayout>
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:padding="10dp"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/idBtnConect"
+                    app:layout_constraintEnd_toStartOf="@+id/idBtnConect"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/idBtnDispBT" />
+
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/idBtnConect"
-                    android:layout_width="0dp"
+                    android:layout_width="150dp"
                     android:text="Conectar"
+                    android:padding="10dp"
+                    app:layout_goneMarginTop="20dp"
                     android:textColor="@color/white"
                     android:background="@drawable/bac_5"
                     android:layout_marginTop="10dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/idBtnDispBT"
+
+                    app:layout_constraintTop_toBottomOf="@+id/idBtnDispBT"
                     app:layout_constraintEnd_toEndOf="parent"
                     android:layout_height="wrap_content"/>
                 <TextView
                     android:id="@+id/textView"
-                    android:textColor="@color/white"
+                   android:textColor="@color/black"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="LUZ 1"
                     android:textAlignment="center"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/idBtnConect"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="20dp"
                     android:textSize="16sp"
                     android:textStyle="bold" />
                 <androidx.appcompat.widget.AppCompatButton
@@ -118,7 +116,7 @@
                     android:layout_height="wrap_content"
                     android:text="On"
                     android:background="@drawable/bac_6"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="20dp"
                     android:layout_marginEnd="6dp"
                     app:layout_constraintEnd_toStartOf="@+id/idBtnLuz_1off"
                     app:layout_constraintStart_toStartOf="parent"
@@ -126,11 +124,12 @@
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/idBtnLuz_1off"
                     android:layout_width="0dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="20dp"
                     android:layout_marginStart="6dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/textView"
                     android:text="Of"
+
                     android:background="@drawable/bac_6"
                     app:layout_constraintStart_toEndOf="@+id/idBtnLuz_1on"
                     android:layout_height="wrap_content"/>
@@ -143,7 +142,7 @@
                     android:textAlignment="center"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/idBtnLuz_1on"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="20dp"
                     android:textSize="16sp"
                     android:textStyle="bold" />
                 <androidx.appcompat.widget.AppCompatButton
@@ -152,7 +151,7 @@
                     android:layout_height="wrap_content"
                     android:text="On"
                     android:background="@drawable/bac_7"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="20dp"
                     android:layout_marginEnd="6dp"
                     app:layout_constraintEnd_toStartOf="@+id/idBtnLuz_2off"
                     app:layout_constraintStart_toStartOf="parent"
@@ -160,7 +159,7 @@
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/idBtnLuz_2off"
                     android:layout_width="0dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="20dp"
                     android:layout_marginStart="6dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/textView2"
@@ -169,12 +168,13 @@
                     app:layout_constraintStart_toEndOf="@+id/idBtnLuz_2on"
                     android:layout_height="wrap_content"/>
                 <TextView
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="20dp"
                     android:id="@+id/textView3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="TEXTO A ENVIAR"
-                    android:textAlignment="textStart"
+                    android:text="ENVIAR COMANDO"
+                    android:textAlignment="center"
+                    android:padding="10dp"
                     android:textColor="@color/white"
                     android:textSize="16sp"
                     app:layout_constraintStart_toStartOf="parent"
@@ -182,37 +182,42 @@
                     android:textStyle="bold" />
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/a"
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/idBtnEnviar"
                     app:layout_constraintTop_toBottomOf="@id/textView3">
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/idTextOut"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:ems="10"
+                      android:textSize="20sp"
                         android:drawableStart="@drawable/ic_search"
                         android:drawablePadding="10dp"
                         android:padding="16dp"
                         android:drawableTint="@color/white"
                         android:textColor="@color/white"
                         android:textColorHint="#E60C56"
-                        android:hint="Texto a Enviar"
-                        android:inputType="text" />
+                        android:hint="Enviar Comando"
+                        android:inputType="number" />
 
                 </com.google.android.material.textfield.TextInputLayout>
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/idBtnEnviar"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_marginTop="10dp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/a"
-                    app:layout_constraintStart_toStartOf="parent"
-                    android:text="Enviar Texto"
+                    app:layout_constraintTop_toBottomOf="@id/textView3"
+                    android:src="@drawable/ic_plane"
                     android:textColor="@color/black"
                     android:textStyle="bold"
-                    android:textSize="20sp"
                     android:background="@drawable/bac_2"
+                    android:textSize="20sp"
+                    android:padding="10dp"
+                    android:text="Enviar"
+                    app:layout_constraintBottom_toBottomOf="@id/a"
                     android:layout_marginBottom="10dp"
                     android:layout_height="wrap_content"/>
 
